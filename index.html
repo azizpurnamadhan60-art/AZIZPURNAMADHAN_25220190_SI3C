@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Royal Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <!-- SIDEBAR -->
+      <aside class="sidebar" id="sidebar">
+        <div class="brand brand-mobile">Royal Dashboard</div>
+
+        <nav>
+          <a class="nav-link active" href="#home"> Home</a>
+          <a class="nav-link" href="#mahasiswa">Mahasiswa</a>
+          <a class="nav-link" href="#kelas">Kelas</a>
+          <a class="nav-link" href="#aktivitas">Aktivitas</a>
+          <a class="nav-link" href="#statistik"> Statistik</a>
+          <a class="nav-link" href="#dokumen"> Dokumen</a>
+          <a class="nav-link" href="#settings"> Settings</a>
+          <a class="nav-link signout" href="#signout">↪ Sign Out</a>
+        </nav>
+
+        <div class="sidebar-bottom">
+          Sistem Informasi
+          <small>Dashboard Akademik</small>
+        </div>
+      </aside>
+
+      <!-- KONTEN UTAMA -->
+      <main class="main-content" id="home">
+        <!-- HEADER -->
+        <header class="topbar">
+          <button class="menu-button" id="menuButton">☰</button>
+
+          <div class="brand">Royal Dashboard</div>
+
+          <label class="search-box">
+            <span>⌕</span>
+            <input
+              type="search"
+              id="searchInput"
+              placeholder="Cari kelas, dokumen, aktivitas..."
+            />
+          </label>
+        </header>
+
+        <!-- WELCOME -->
+        <section class="welcome-card">
+          <div>
+            <p class="eyebrow">DASHBOARD MAHASISWA</p>
+
+            <h1>
+              Selamat Datang,
+              <span id="studentName">AZIZ PURNAMADHAN</span>
+            </h1>
+
+            <h2>Kelas <span id="studentClass">SI-3C</span></h2>
+
+            <p class="welcome-desc">
+              Kamu memiliki statistik, progres kelas, aktivitas selanjutnya dan
+              lampiran dokumen yang ada pada aplikasi ini.
+            </p>
+          </div>
+
+          <img src="Aziz.jpeg" class="avatar" alt="" />
+        </section>
+
+        <!-- STATISTIK DAN INFORMASI -->
+        <section class="summary-grid">
+          <!-- STATISTIK -->
+          <article class="panel chart-panel" id="statistik">
+            <div class="panel-heading">
+              <div>
+                <p class="eyebrow">RINGKASAN</p>
+                <h3>Statistik Mahasiswa</h3>
+              </div>
+
+              <span class="period">Semester ini</span>
+            </div>
+            <div class="chart-container">
+              <img
+                src="Chart_Statistik.svg"
+                alt="Statistik Mahasiswa"
+                class="chart-image"
+              />
+            </div>
+
+            <div class="chart-legend">
+              <span>Kehadiran</span>
+              <span>Rata-rata</span>
+            </div>
+          </article>
+
+          <!-- PROGRES KELAS -->
+          <article class="panel progress-panel" id="kelas">
+            <div class="panel-heading">
+              <div>
+                <p class="eyebrow">AKADEMIK</p>
+                <h3>Progres Kelas</h3>
+              </div>
+            </div>
+
+            <div class="progress-list">
+              <div class="progress-item">
+                <div>
+                  <b>Matakuliah A</b>
+                  <small>28 Pendaftar</small>
+                </div>
+                <strong>85%</strong>
+                <div class="progress-track">
+                  <i style="width: 85%"></i>
+                </div>
+              </div>
+
+              <div class="progress-item">
+                <div>
+                  <b>Matakuliah B</b>
+                  <small>30 Pendaftar</small>
+                </div>
+                <strong>70%</strong>
+                <div class="progress-track">
+                  <i style="width: 70%"></i>
+                </div>
+              </div>
+
+              <div class="progress-item">
+                <div>
+                  <b>Matakuliah C</b>
+                  <small>40 Pendaftar</small>
+                </div>
+                <strong>60%</strong>
+                <div class="progress-track">
+                  <i style="width: 60%"></i>
+                </div>
+              </div>
+
+              <div class="progress-item">
+                <div>
+                  <b>Matakuliah D</b>
+                  <small>10 Pendaftar</small>
+                </div>
+                <strong>45%</strong>
+                <div class="progress-track">
+                  <i style="width: 45%"></i>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- AKTIVITAS -->
+          <article class="panel activity-panel" id="aktivitas">
+            <div class="panel-heading">
+              <div>
+                <p class="eyebrow">AGENDA</p>
+                <h3>Aktivitas Selanjutnya</h3>
+              </div>
+            </div>
+
+            <div class="activity-list">
+              <div class="activity-item">
+                <span class="activity-dot"></span>
+                <div>
+                  <b>Perkuliahan Daring 1</b>
+                  <small>Senin, 15 Januari 2026</small>
+                </div>
+              </div>
+
+              <div class="activity-item">
+                <span class="activity-dot"></span>
+                <div>
+                  <b>Perkuliahan Daring 1</b>
+                  <small>Selasa, 15 Februari 2026</small>
+                </div>
+              </div>
+
+              <div class="activity-item">
+                <span class="activity-dot"></span>
+                <div>
+                  <b>Perkuliahan Daring 1</b>
+                  <small>Rabu, 15 Maret 2026</small>
+                </div>
+              </div>
+
+              <div class="activity-item">
+                <span class="activity-dot"></span>
+                <div>
+                  <b>Perkuliahan Daring 1</b>
+                  <small>Kamis, 15 April 2026</small>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <!-- DOKUMEN -->
+        <section class="panel documents-panel" id="dokumen">
+          <div class="panel-heading">
+            <div>
+              <p class="eyebrow">FILE AKADEMIK</p>
+              <h3>Lampiran Dokumen</h3>
+            </div>
+
+            <a href="#dokumen" class="see-all">Lihat semua</a>
+          </div>
+
+          <div class="document-list">
+            <div class="document-row">
+              <span class="file-icon">PDF</span>
+              <div>
+                <b>Lampiran Dokumen 1 - Matakuliah A</b>
+                <small>Tugas Bersama Perkuliahan Daring</small>
+              </div>
+              <a href="#" class="document-link">Lihat Dokumen</a>
+            </div>
+
+            <div class="document-row">
+              <span class="file-icon">PDF</span>
+              <div>
+                <b>Lampiran Dokumen 2 - Matakuliah B</b>
+                <small>Tugas Bersama Perkuliahan Daring</small>
+              </div>
+              <a href="#" class="document-link">Lihat Dokumen</a>
+            </div>
+
+            <div class="document-row">
+              <span class="file-icon">PDF</span>
+              <div>
+                <b>Lampiran Dokumen 3 - Matakuliah C</b>
+                <small>Tugas Bersama Perkuliahan Daring</small>
+              </div>
+              <a href="#" class="document-link">Lihat Dokumen</a>
+            </div>
+          </div>
+        </section>
+
+        <footer>© 2026 Royal Dashboard · Sistem Informasi</footer>
+      </main>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
